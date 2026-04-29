@@ -1,0 +1,81 @@
+create DATABASE Predictive_Maintenance ;
+go
+
+
+USE Predictive_Maintenance;
+GO
+
+CREATE TABLE 1005Tp_sensor_data (
+
+	time DATETIME,
+
+    Back_Shaft_LHS_A_Peak FLOAT,
+    Back_Shaft_LHS_A_rms FLOAT,
+    Back_Shaft_LHS_Crest_Factor FLOAT,
+    Back_Shaft_LHS_Temp FLOAT,
+    Back_Shaft_LHS_V_rms FLOAT,
+
+    Back_Shaft_RHS_A_Peak FLOAT,
+    Back_Shaft_RHS_A_rms FLOAT,
+    Back_Shaft_RHS_Crest_Factor FLOAT,
+    Back_Shaft_RHS_Temp FLOAT,
+    Back_Shaft_RHS_V_rms FLOAT,
+
+    Bottom_Ejection_Hyd_PP_Oil_Level_In_Liter FLOAT,
+    Bottom_Ejection_Hyd_PP_Oil_Pressure FLOAT,
+    Bottom_Ejection_Hyd_PP_Oil_Temp FLOAT,
+
+    Brake_Clamping_Pressure FLOAT,
+    Brake_Opening_LHS FLOAT,
+    Brake_Opening_RHS FLOAT,
+
+    CBC_Air_Pressure FLOAT,
+
+    CR_A_Peak FLOAT,
+    CR_A_rms FLOAT,
+    CR_Crest_Factor FLOAT,
+    CR_Temp FLOAT,
+    CR_V_rms FLOAT,
+
+    CS_Run_Cycle_Time FLOAT,
+    Clutch_Clamping_Pressure FLOAT,
+    Connecting_Rod_Cap_Temp FLOAT,
+
+    Die_Contact NVARCHAR(50),
+    Die_Spray_Tank_Level FLOAT,
+    Die_Spray_Tank_Temperature FLOAT,
+
+    FP_BE_Hyd_PP_Motor_Temp FLOAT,
+    FP_Brake_Temp FLOAT,
+    FP_Grease_Barrel_Level_In_Liter FLOAT,
+
+    FP_MM_A_Peak FLOAT,
+    FP_MM_A_rms FLOAT,
+    FP_MM_Crest_Factor FLOAT,
+    FP_MM_Temp FLOAT,
+    FP_MM_V_rms FLOAT,
+
+    FP_Run_Cycle_Time FLOAT,
+    FP_Run_Cycle_Time_Avg FLOAT,
+
+    Flywheel_Rpm FLOAT,
+
+    Heat_Code_Contact NVARCHAR(50),
+
+    IBH_Dropout_Cost FLOAT,
+    IBH_Dropout_In_Percentage FLOAT,
+    IBH_Dropout_Qty FLOAT,
+
+    Main_Air_Pressure FLOAT,
+
+    Run_Code_Contact NVARCHAR(50),
+
+    Standard_Cycle_Time FLOAT,
+    Standard_Cycle_Time_Contact NVARCHAR(50),
+
+    TP_Run_Cycle_Time FLOAT,
+    Total_kVAh_Per_Ton FLOAT,
+
+    good_counter FLOAT,
+    scrap_counter FLOAT
+);
